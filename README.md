@@ -1,6 +1,16 @@
 # Asignment-3
 Assignment 3(Python 3)
 
+1.1 Write a Python Program to implement your own myreduce() function which works exactly
+like Python's built-in function reduce()
+
+# my reduce function
+def reduce_(func_,lst):
+    result=lst[0]  # first item
+    for item in lst[1:]:  # Next items
+        result=func_(result,item)
+        return result 
+  print('add lst ' + str(myreduce(sum, [1,2,3])))
 
 #1.2 Write a Python program to implement your own myfilter() function which works exactly like
 #Python's built-in function filter()
